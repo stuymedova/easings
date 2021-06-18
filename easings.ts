@@ -1,23 +1,23 @@
 // Back easings
-export function backInOut(t:number):number {
+export function backInOut(t:number) {
   var s = 1.70158 * 1.525;
   if ((t *= 2) < 1)
     return 0.5 * (t * t * ((s + 1) * t - s))
   return 0.5 * ((t -= 2) * t * ((s + 1) * t + s) + 2)
 }
 
-export function backIn(t:number):number {
+export function backIn(t:number) {
   var s = 1.70158;
   return t * t * ((s + 1) * t - s)
 }
 
-export function backOut(t:number):number {
+export function backOut(t:number) {
   var s = 1.70158;
   return --t * t * ((s + 1) * t + s) + 1
 }
 
 // Bounce easings
-export function bounceOut(t:number):number {
+export function bounceOut(t:number) {
   var a = 4.0 / 11.0;
   var b = 8.0 / 11.0;
   var c = 9.0 / 10.0;
@@ -37,63 +37,63 @@ export function bounceOut(t:number):number {
         : 10.8 * t * t - 20.52 * t + 10.72
 }
 
-export function bounceInOut(t:number):number {
+export function bounceInOut(t:number) {
   return t < 0.5
     ? 0.5 * (1.0 - bounceOut(1.0 - t * 2.0))
     : 0.5 * bounceOut(t * 2.0 - 1.0) + 0.5
 }
 
-export function bounceIn(t:number):number {
+export function bounceIn(t:number) {
   return 1.0 - bounceOut(1.0 - t)
 }
 
 // Circle easings
-export function circInOut(t:number):number {
+export function circInOut(t:number) {
   if ((t *= 2) < 1) return -0.5 * (Math.sqrt(1 - t * t) - 1)
   return 0.5 * (Math.sqrt(1 - (t -= 2) * t) + 1)
 }
 
-export function circIn(t:number):number {
+export function circIn(t:number) {
   return 1.0 - Math.sqrt(1.0 - t * t)
 }
 
-export function circOut(t:number):number {
+export function circOut(t:number) {
   return Math.sqrt(1 - ( --t * t ))
 }
 
 // Cubic easings
-export function cubicInOut(t:number):number {
+export function cubicInOut(t:number) {
   return t < 0.5
     ? 4.0 * t * t * t
     : 0.5 * Math.pow(2.0 * t - 2.0, 3.0) + 1.0
 }
 
-export function cubicIn(t:number):number {
+export function cubicIn(t:number) {
   return t * t * t
 }
 
-export function cubicOut(t:number):number {
+export function cubicOut(t:number) {
   var f = t - 1.0;
   return f * f * f + 1.0
 }
 
 // Elastic easings
-export function elasticInOut(t:number):number {
+export function elasticInOut(t:number) {
   return t < 0.5
     ? 0.5 * Math.sin(+13.0 * Math.PI/2 * 2.0 * t) * Math.pow(2.0, 10.0 * (2.0 * t - 1.0))
     : 0.5 * Math.sin(-13.0 * Math.PI/2 * ((2.0 * t - 1.0) + 1.0)) * Math.pow(2.0, -10.0 * (2.0 * t - 1.0)) + 1.0
 }
 
-export function elasticIn(t:number):number {
+export function elasticIn(t:number) {
   return Math.sin(13.0 * t * Math.PI/2) * Math.pow(2.0, 10.0 * (t - 1.0))
 }
 
-export function elasticOut(t:number):number {
+export function elasticOut(t:number) {
   return Math.sin(-13.0 * (t + 1.0) * Math.PI/2) * Math.pow(2.0, -10.0 * t) + 1.0
 }
 
 // Exponential easings
-export function expoInOut(t:number):number {
+export function expoInOut(t:number) {
   return (t === 0.0 || t === 1.0)
     ? t
     : t < 0.5
@@ -101,75 +101,75 @@ export function expoInOut(t:number):number {
       : -0.5 * Math.pow(2.0, 10.0 - (t * 20.0)) + 1.0
 }
 
-export function expoIn(t:number):number {
+export function expoIn(t:number) {
   return t === 0.0 ? t : Math.pow(2.0, 10.0 * (t - 1.0))
 }
 
-export function expoOut(t:number):number {
+export function expoOut(t:number) {
   return t === 1.0 ? t : 1.0 - Math.pow(2.0, -10.0 * t)
 }
 
 // Linear easings
-export function linear(t:number):number {
+export function linear(t:number) {
   return t
 }
 
 // Sine easings
-export function sineInOut(t:number):number {
+export function sineInOut(t:number) {
   return -0.5 * (Math.cos(Math.PI*t) - 1)
 }
 
-export function sineIn (t:number):number {
+export function sineIn (t:number) {
   var v = Math.cos(t * Math.PI * 0.5);
   if (Math.abs(v) < 1e-14) return 1
   else return 1 - v
 }
 
-export function sineOut(t:number):number {
+export function sineOut(t:number) {
   return Math.sin(t * Math.PI/2)
 }
 
 // Quadratic easings
-export function quadInOut(t:number):number {
+export function quadInOut(t:number) {
     t /= 0.5;
     if (t < 1) return 0.5*t*t
     t--;
     return -0.5 * (t*(t-2) - 1)
 }
 
-export function quadIn(t:number):number {
+export function quadIn(t:number) {
   return t * t
 }
 
-export function quadOut(t:number):number {
+export function quadOut(t:number) {
   return -t * (t - 2.0)
 }
 
 // Quartic easings
-export function quartInOut(t:number):number {
+export function quartInOut(t:number) {
   return t < 0.5
     ? +8.0 * Math.pow(t, 4.0)
     : -8.0 * Math.pow(t - 1.0, 4.0) + 1.0
 }
 
-export function quartIn(t:number):number {
+export function quartIn(t:number) {
   return Math.pow(t, 4.0)
 }
 
-export function quartOut(t:number):number {
+export function quartOut(t:number) {
   return Math.pow(t - 1.0, 3.0) * (1.0 - t) + 1.0
 }
 
 // Quintic easings
-export function quintInOut(t:number):number {
+export function quintInOut(t:number) {
     if ( ( t *= 2 ) < 1 ) return 0.5 * t * t * t * t * t
     return 0.5 * ( ( t -= 2 ) * t * t * t * t + 2 )
 }
 
-export function quintIn(t:number):number {
+export function quintIn(t:number) {
   return t * t * t * t * t
 }
 
-export function quintOut(t:number):number {
+export function quintOut(t:number) {
   return --t * t * t * t * t + 1
 }
