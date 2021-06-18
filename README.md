@@ -2,16 +2,16 @@
 
 ## Easing functions
 
-- Back easings: `backInOut`, `backIn`, `backOut`
-- Bounce easings: `bounceInOut`, `bounceIn`, `bounceOut`
-- Circle easings: `circleInOut`, `circleIn`, `circleOut`
-- Elastic easings: `elasticInOut`, `elasticIn`, `elasticOut`
-- Exponential easings: `expoInOut`, `expoIn`, `expoOut`
-- Linear easings: `linear`
-- Sine easings: `sineInOut`, `sineIn`, `sineOut`
-- Quadratic easings: `quadInOut`, `quadIn`, `quadOut`
-- Quartic easings: `quartInOut`, `quartIn`, `quartOut`
-- Quintic easings: `quintInOut`, `quintIn`, `quintOut`
+- Back easings: `backInOut(t)`, `backIn(t)`, `backOut(t)`
+- Bounce easings: `bounceInOut(t)`, `bounceIn(t)`, `bounceOut(t)`
+- Circle easings: `circleInOut(t)`, `circleIn(t)`, `circleOut(t)`
+- Elastic easings: `elasticInOut(t)`, `elasticIn(t)`, `elasticOut(t)`
+- Exponential easings: `expoInOut(t)`, `expoIn(t)`, `expoOut(t)`
+- Linear easings: `linear(t)`
+- Sine easings: `sineInOut(t)`, `sineIn(t)`, `sineOut(t)`
+- Quadratic easings: `quadInOut(t)`, `quadIn(t)`, `quadOut(t)`
+- Quartic easings: `quartInOut(t)`, `quartIn(t)`, `quartOut(t)`
+- Quintic easings: `quintInOut(t)`, `quintIn(t)`, `quintOut(t)`
 
 ## Demo/Usage
 
@@ -57,7 +57,7 @@ Output:
 ```
 
 ## More on easing
-[Easing Graphs / D3 / Observable](https://observablehq.com/@d3/easing)*  
-[Easing Animations / D3 / Observable](https://observablehq.com/@d3/easing-animations)*  
+[Easing Graphs / D3 / Observable](https://observablehq.com/@d3/easing)_  
+[Easing Animations / D3 / Observable](https://observablehq.com/@d3/easing-animations)_  
 
-\*Note that [D3](https://github.com/d3/d3-ease) has a slightly different API
+\*Note that D3 has a slightly different API
