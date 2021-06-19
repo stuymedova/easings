@@ -1,3 +1,7 @@
+// Adapted from https://github.com/mattdesl
+// Distributed under MIT License https://github.com/mattdesl/eases/blob/master/LICENSE.md
+
+
 // Back easings
 export function backInOut(t:number) {
   var s = 1.70158 * 1.525;
