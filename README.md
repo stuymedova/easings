@@ -13,6 +13,9 @@
 - Quartic easings: `quartInOut(t)`, `quartIn(t)`, `quartOut(t)`
 - Quintic easings: `quintInOut(t)`, `quintIn(t)`, `quintOut(t)`
 
+**Input**: time *t*, typically in the range [0, 1]  
+**Output**: “eased” time *tʹ*, also typically in the range [0, 1]
+
 ## Demo/Usage
 
 ```js
@@ -57,7 +60,7 @@ Output:
 ```
 
 ## More on easing
-[Easing Graphs / D3 / Observable](https://observablehq.com/@d3/easing)_  
-[Easing Animations / D3 / Observable](https://observablehq.com/@d3/easing-animations)_  
+[Easing Graphs / D3 / Observable](https://observablehq.com/@d3/easing)*  
+[Easing Animations / D3 / Observable](https://observablehq.com/@d3/easing-animations)*  
 
 \*Note that D3 has a slightly different API
