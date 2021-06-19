@@ -60,4 +60,4 @@ Output:
 [Easing Graphs / D3 / Observable](https://observablehq.com/@d3/easing)_  
 [Easing Animations / D3 / Observable](https://observablehq.com/@d3/easing-animations)_  
 
-\*Note that [D3](https://github.com/d3/d3-ease) has a slightly different API
+\*Note that D3 has a slightly different API
