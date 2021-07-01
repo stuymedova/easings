@@ -19,7 +19,7 @@
 ## Demo/Usage
 
 ```js
-import * as easings from 'https://deno.land/x/easings/easings.ts';
+import * as easings from 'https://deno.land/x/easings/mod.ts';
 
 for (let t = 0; t <= 1; t += 0.05) {
   const eased = easings.cubicInOut(t);
